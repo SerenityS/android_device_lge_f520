@@ -25,6 +25,8 @@ DEVICE_PACKAGE_OVERLAYS += device/lge/f520/overlay
 PRODUCT_COPY_FILES += \
     device/lge/f520/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
     device/lge/f520/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/f520/prebuilt/usr/idc/touch_dev.idc:system/usr/idc/touch_dev.idc \
+    device/lge/f520/prebuilt/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
     device/lge/f520/prebuilt/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 # Screen density
