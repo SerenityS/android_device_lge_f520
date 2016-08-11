@@ -1,7 +1,6 @@
 telephony.lteOnGsmDevice=1
 telephony.lteOnCdmaDevice=0
 ro.telephony.default_network=9
-rild.libargs=-d /dev/smd0
 
 ro.sf.lcd_density=320
 
