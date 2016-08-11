@@ -1,6 +1,6 @@
 # NVRAM file for BCM94334WLAGB board
 # 2GHz & 5GHz FEM ANADIGICS
-# LG-B2-MINI-SPRINT Rev.B - 20140616
+# LG-AKA-KR Rev.A - 20140722
 
 manfid=0x2d0
 prodid=0x05de
@@ -15,7 +15,7 @@ sromrev=3
 boardflags=0x10081a01
 xtalfreq=37400
 nocrc=1
-ag0=0
+ag0=0xfc
 aa2g=1
 ccode=ALL
 pa0itssit=0x20
@@ -24,10 +24,10 @@ pa0itssit=0x20
 extpagain2g=2
 extpagain5g=2
 
-#PA parameters for 2.4GHz_Anadigics FEM
-pa0b0=0x17DF
-pa0b1=0xFD3E
-pa0b2=0xFF77
+#PA parameters for 2.4GHz_Andigics FEM
+pa0b0=0x1A22
+pa0b1=0xFD25
+pa0b2=0xFFA5
 tssifloor2g=25
 # rssi params for 2.4GHz_Anadigics FEM
 rssismf2g=0x8
@@ -39,45 +39,48 @@ rssismf5g=0xe
 rssismc5g=0xa
 rssisav5g=0x1
 #5G-PA parameters for low band
-pa1lob0=0x1833
-pa1lob1=0xFD73
-pa1lob2=0xFFCA
-tssifloor5gl=35
+pa1lob0=0x2ACF
+pa1lob1=0x1B
+pa1lob2=0x37A
+tssifloor5gl=25
 #5G-PA parameters for midband
-pa1b0=0x17B5
-pa1b1=0xFD7A
-pa1b2=0xFFD2
-tssifloor5g=35
-#5G-PA parameters for high band
-pa1hib0=0x180C
-pa1hib1=0xFD7B
-pa1hib2=0xFFEA
-tssifloor5gh=35
+pa1b0=0x285E
+pa1b1=0xFFD4
+pa1b2=0x35C
+tssifloor5g=25
+#5G-PA paramasdeters for high band
+pa1hib0=0x3263
+pa1hib1=0x17D
+pa1hib2=0x616
+tssifloor5gh=25
 
 #2.4G-target power
-maxp2ga0=72
-ofdm2gpo=0x66666666
-mcs2gpo0=0x8888
-mcs2gpo1=0x8888
-cckPwrOffset=-4
+maxp2ga0=82
+ofdm2gpo=0x88888886
+mcs2gpo0=0xAAAA
+mcs2gpo1=0xAAAA
+cckPwrOffset=0
 
 #5G-target power for low band
 maxp5gla0=72
-ofdm5glpo=0x66666666
+ofdm5glpo=0x44444444
+#ofdm5glpo=0x22222222
 mcs5glpo0=0x8888
 mcs5glpo1=0x8888
 mcs5glpo2=0xAAAA
 mcs5glpo3=0xAAAA
 #5G-target power for midband
 maxp5ga0=72
-ofdm5gpo=0x66666666
+ofdm5gpo=0x44444444
+#ofdm5gpo=0x22222222
 mcs5gpo0=0x8888
 mcs5gpo1=0x8888
 mcs5gpo2=0xAAAA
 mcs5gpo3=0xAAAA
 #5G-target power for high band
 maxp5gha0=72
-ofdm5ghpo=0x66666666
+ofdm5ghpo=0x44444444
+#ofdm5ghpo=0x22222222
 mcs5ghpo0=0x8888
 mcs5ghpo1=0x8888
 mcs5ghpo2=0xAAAA
@@ -102,7 +105,7 @@ swctrlmap_2g=0x00040004,0x000a000a,0x00020002,0x1020a,0x1ff
 swctrlmap_5g=0x00400040,0x00300030,0x00100010,0x1020a,0x2f8
 
 elna_off_gain_idx_2g=30
-triso2g=8
+triso2g=7
 triso5g=7
 
 #muxenab=0x10

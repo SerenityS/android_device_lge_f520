@@ -19,13 +19,13 @@ $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Specific overlay
-DEVICE_PACKAGE_OVERLAYS += device/lge/jagnm/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/f520/overlay
 
 # Configs
 PRODUCT_COPY_FILES += \
-    device/lge/jagnm/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
-    device/lge/jagnm/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/lge/jagnm/prebuilt/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+    device/lge/f520/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
+    device/lge/f520/prebuilt/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
+    device/lge/f520/prebuilt/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -33,10 +33,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Common specific options
 BOARD_HAS_QCOM_WCNSS := false
-BOARD_HAS_NFC := false
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.telephony.default_network=10 \
+    ro.telephony.default_network=9 \
     ro.sf.lcd_density=320 \
     ro.config.vc_call_vol_steps=6
 
@@ -45,5 +44,5 @@ BOARD_HAS_NFC := true
 
 # Inherit from msm8226-common
 $(call inherit-product, device/lge/msm8226-common/msm8226.mk)
-$(call inherit-product, vendor/lge/jagnm/jagnm-vendor.mk)
+$(call inherit-product, vendor/lge/f520/f520-vendor.mk)
 
