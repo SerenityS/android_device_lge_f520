@@ -34,6 +34,10 @@ PRODUCT_COPY_FILES += \
     device/lge/f520/prebuilt/usr/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
     device/lge/f520/prebuilt/etc/wifi/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
 
+# RIL symbols
+PRODUCT_PACKAGES += \
+    liblge
+
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
