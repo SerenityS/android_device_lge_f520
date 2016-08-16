@@ -44,6 +44,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # Common specific options
 BOARD_HAS_QCOM_WCNSS := false
+BOARD_USE_LGE_RIL := true
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.telephony.default_network=9 \
