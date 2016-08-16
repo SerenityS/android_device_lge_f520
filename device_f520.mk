@@ -21,6 +21,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 # Specific overlay
 DEVICE_PACKAGE_OVERLAYS += device/lge/f520/overlay
 
+# Bluetooth
+PRODUCT_COPY_FILES += \
+    device/lge/f520/bluetooth/bt_did.conf:system/etc/bluetooth/bt_did.conf \
+    device/lge/f520/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+
 # Configs
 PRODUCT_COPY_FILES += \
     device/lge/f520/prebuilt/etc/media_profiles.xml:system/etc/media_profiles.xml \
