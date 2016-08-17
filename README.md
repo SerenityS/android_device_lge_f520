@@ -19,4 +19,4 @@ Front Camera | 2.1 MP
 Release Date | May 2015
 
 
-![LG AKA](i-cdn.phonearena.com/images/articles/174687-image/The-LG-AKA.jpg "LG AKA")
+![LG AKA](http://i-cdn.phonearena.com/images/articles/174687-image/The-LG-AKA.jpg "LG AKA")
